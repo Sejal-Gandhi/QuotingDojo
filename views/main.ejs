@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta cahrset="UTF-8">
+	<title>Main Page</title>
+	
+</head>
+<body>
+	<div>
+		<h3>Here are the awesome quotes!</h3>
+		<div>
+			<% for(var x in quotes){ %>
+			<h4>"<%= quotes[x].quotes %> "</h4>
+			<h5>-- <%= quotes[x].name %> at <%= quotes[x].created_at %></h5>
+			<hr>
+			<% } %>
+		</div>
+		<button><a href="/">Back</a></button>
+	</div>
+           
+
+</body>
+</html>
